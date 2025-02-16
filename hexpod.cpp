@@ -211,8 +211,34 @@ void QUANRUPED::strip_begin(int r_data,int g_data,int b_data)
 }
 void QUANRUPED::servo_attach()
 {
-	 s0.attach(2);     s1.attach(3);     s2.attach(4);     s3.attach(5);     s4.attach(6);     s5.attach(7);     s6.attach(8);     s7.attach(9);     s8.attach(10);    s9.attach(11);    s10.attach(12);     s11.attach(13); s12.attach(14);
-  s0.write(angle0); s1.write(angle1); s2.write(angle2); s3.write(angle3); s4.write(angle4); s5.write(angle5); s6.write(angle6); s7.write(angle7); s8.write(angle8); s9.write(angle9); s10.write(angle10); s11.write(angle11); s12.write(angle12); 
+	 s0.attach(2);     
+	 s1.attach(3);     
+	 s2.attach(4);     
+	 s3.attach(5);     
+	 s4.attach(6);     
+	 //s5.attach(7);     
+	 s6.attach(8);     
+	 s7.attach(9);     
+	 s8.attach(10);    
+	 s9.attach(11);    
+	 s10.attach(12);     
+	 s11.attach(13); 
+	 s12.attach(14);
+  
+  s0.write(angle0); 
+  s1.write(angle1); 
+  s2.write(angle2); 
+  s3.write(angle3); 
+  s4.write(angle4); 
+  s5.write(angle5); 
+  s6.write(angle6); 
+  s7.write(angle7); 
+  s8.write(angle8); 
+  s9.write(angle9); 
+  s10.write(angle10); 
+  s11.write(angle11); 
+  s12.write(angle12); 
+	
 	strip.begin();strip.setBrightness(50);
 	
 }
@@ -903,7 +929,7 @@ void QUANRUPED::turnheadleft()
 
 
       //s2.write(angle2-i2H4); // D4
-      s12.write(angle2-i2H4); // D4
+      s11.write(angle2-i2H4); // D4
       i2H4++;
       if(i2H4==46){
         i2H4=0;
