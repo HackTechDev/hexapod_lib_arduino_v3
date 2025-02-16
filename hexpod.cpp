@@ -891,10 +891,20 @@ if(status1>45){
 
 void QUANRUPED::turnheadleft()
 {
+    for(int i=0;i<3;i++){
+      strip.setPixelColor(i,strip.Color(0,232,0));
+      strip.show(); 
+      delay(1);                                              
+     }
 }
 
 void QUANRUPED::turnheadright()
 {
+   for(int i=3;i<6;i++){
+      strip.setPixelColor(i,strip.Color(232,0,0));
+      strip.show(); 
+      delay(1);                                              
+     }
 }
 
 
