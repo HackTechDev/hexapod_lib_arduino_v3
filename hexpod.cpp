@@ -896,6 +896,47 @@ void QUANRUPED::turnheadleft()
       strip.show(); 
       delay(1);                                              
      }
+    
+     while (status4<=45) {
+      status4++;
+    
+
+
+      //s2.write(angle2-i2H4); // D4
+      s12.write(angle2-i2H4); // D4
+      i2H4++;
+      if(i2H4==46){
+        i2H4=0;
+      }
+/*
+      delay(actionspeed);
+      s4.write(angle4); //D6
+
+
+      s6.write(angle6+i6H4); //D8
+      i6H4++;
+      if(i6H4==46){
+        i6H4=0;
+      }
+
+      delay(actionspeed);
+
+      s8.write(angle8); //D10
+
+      s10.write(angle10+i10H4); //D13
+      i10H4++;
+      if(i10H4==46){
+          i10H4=0;
+      }
+*/
+      delay(actionspeed);
+
+      if(status4>45){
+          status4=0;
+          break;
+      }
+    } // fin while
+   
 }
 
 void QUANRUPED::turnheadright()
@@ -905,6 +946,7 @@ void QUANRUPED::turnheadright()
       strip.show(); 
       delay(1);                                              
      }
+   s2.write(60);   
 }
 
 
