@@ -798,14 +798,8 @@ void QUANRUPED::turnheadleft()
 		delay(1);                                              
 	}
 
-	s11.write(20);
-	/*
-	   s11.write(angle_claw);
-	   angle_claw++;
-	   if (angle_claw == 90) {
-	   angle_claw = 90;
-	   }
-	   */
+	s11.write(0);
+	
 	delay(actionspeed);
 
 }
@@ -819,13 +813,7 @@ void QUANRUPED::turnheadright()
 	}
 
 	s11.write(90);
-	/*
-	   s11.write(angle_claw);
-	   angle_claw--;
-	   if (angle_claw == -90) {
-	   angle_claw = -90;
-	   }
-	   */
+	
 	delay(actionspeed); 
 }
 

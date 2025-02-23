@@ -14,5 +14,5 @@ int angle8 = 114;
 int angle9 = 90;
 int angle10 = 96;
 int angle11 = 93;
-int angle12 = 90;
+int angle12 = 99; // Head
 #endif
