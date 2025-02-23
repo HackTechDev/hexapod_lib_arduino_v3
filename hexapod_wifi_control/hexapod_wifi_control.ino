@@ -40,7 +40,7 @@ void ESP8266_ATCOMMAND(){
    Serial.println("AT+CWMODE=3\r\n");//set to softAP+station mode
    delay(2000);     //delay 4s
    
-   Serial.println("AT+CWSAP=\"Adeept_ESP\",\"12345678\",8,2\r\n");   //TCP Protocol, server IP addr, port
+   Serial.println("AT+CWSAP=\"Hexapod\",\"12345678\",8,2\r\n");   //TCP Protocol, server IP addr, port
     delay(2000);     //delay 4s
    Serial.println("AT+RST\r\n");     //reset wifi
    delay(2000);     //delay 4s
